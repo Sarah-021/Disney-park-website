@@ -1,0 +1,129 @@
+/*BODY*/
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /*auto-> header et footer, le 2 (main)-> 1fr(s'étend pour remplir espace restant*/
+    /* Une rangée pour l'en-tête, une pour le contenu, une pour le pied de page */
+    min-height: 100vh;
+    /*contenu s'étend sur 100% de la fenetre (mm si c'est vide)*/
+    margin: 0;
+    /*suppression des marges exterieurs, pas d'espacement */
+    font-family: Arial;
+    line-height: 1.6;
+    /*hauteur ligne du texte*/
+    background-color: #fde4e4;
+}
+
+/*HEADER*/
+
+header {
+    grid-row: 1;
+    /* L'en-tête sur la première rangée */
+    background-color: #f26d7d;
+    color: #fff;
+    padding: 20px;
+    /*pour tous les cotés*/
+}
+
+header h1 a {
+    color: #ffb3d1;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    /*Voir note pour chaque partie*/
+    font-size: 50px;
+    font-family: Georgia, "Times New Roman", serif;
+    /*plusieurs polices car selon les disponibilités de chaque appareil*/
+    margin: center;
+}
+
+/* LISTE DE NAV*/
+
+nav ul li a {
+    color: #fff;
+    background-color: #f26d7d;
+    padding: 15px 30px;
+    /* Augmentez l'espacement à l'intérieur des liens */
+    /*15 espace haut et bas, 30 droite et gauche*/
+    border-radius: 5px;
+    /*arrondir les coins*/
+    text-decoration: none;
+    /*pas de soulignement des liens*/
+}
+
+nav ul li a:hover {
+    /* fond rose lorque les liens de navigations sont survolés par le curseur(:hover) */
+    background-color: #ff99b5;
+}
+
+nav ul li {
+    display: inline;
+    /* en ligne non colonne*/
+    margin-right: 20px;
+    /*espacement droite pour chacun */
+    font-size: 20px;
+    /* Taille de police plus grande */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    /* Supprimer les marges par défaut */
+    padding: 0;
+    /* Supprimer les rembourrages par défaut */
+    text-align: center;
+    /* Centrer les éléments de la liste */
+}
+
+/*MAIN*/
+
+main {
+    grid-row: 2;
+    /* Le contenu principal sur la deuxième rangée */
+    padding: 20px;
+    /*pour tous les cotés*/
+}
+
+/*FOOTER*/
+footer {
+    grid-row: 3;
+    /* Le pied de page sur la troisième rangée */
+    background-color: #f26d7d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /*pour tous les cotés*/
+}
+
+
+
+h1 {
+    margin: 0;
+    /*suppression marge par defaut*/
+}
+
+
+
+/*ELEMENTS AVEC LES IDs "site-intro" et "highlighted-park"*/
+#site-intro,
+#highlighted-park {
+    margin-bottom: 30px;
+    /*espace en bas de l'element*/
+    background-color: #fff;
+    padding: 20px;
+    /*espace à l'intérieur autour du contenu */
+    border-radius: 15px;
+    /*arrondir les coins*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    /*Ajout d'ombre*/
+}
+
+
+
+/*NOTE*/
+/*    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); :
+-0-> décalage horizontal de l'ombre
+-0 -> décalage vertical de l'ombre
+-5px -> flou de l'ombre
+-rgba(255, 255, 255, 0.5) -> couleur de l'ombre (RedGreenBlueAlpha->Transparent)
+R+G+B donne du blanc 
+ */

@@ -1,0 +1,41 @@
+h2 {
+    font-family: cursive;
+    color: #ffb3d1;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #dd707d;
+}
+
+#park-info {
+    width: 800px;
+    /* Fixed width */
+    height: 600px;
+    /* Fixed height */
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    overflow: hidden;
+    /* Hides anything that overflows */
+    border-radius: 8px;
+    /* Rounded corners */
+    text-align: center;
+    /* Center text */
+    margin: auto;
+    /* Center the div itself */
+}
+
+.park-info img {
+    max-width: 100%;
+    /* Pour occuper toute la largeur disponible */
+    max-height: 100%;
+    /* Pour occuper toute la hauteur disponible */
+    object-fit: cover;
+    /* Pour s'assurer que l'image est entièrement visible */
+    border-radius: 8px;
+    /*coin arrondi*/
+}

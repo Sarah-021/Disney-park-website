@@ -1,0 +1,120 @@
+/* Style for the section */
+section#park-info {
+    padding: 20px;
+    /* Ajoute un espacement intérieur de 20 pixels */
+    margin: 20px auto;
+    /* Centre la section horizontalement avec un espacement de 20 pixels en haut et en bas */
+    max-width: 800px;
+    background-color: #f8f8f8;
+    /* Couleur de fond gris clair */
+    border-radius: 8px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre subtile */
+
+}
+
+
+/* Style for each park */
+.park {
+    margin-bottom: 20px;
+    /* Espacement entre les parcs */
+}
+
+h1,
+h2 {
+    font-family: cursive;
+    color: #e88a95;
+    font-size: 28px;
+}
+
+h3 {
+    color: #e77d89;
+    margin-bottom: 10px;
+    /* Espacement entre les paragraphes */
+    font-size: 16px;
+    flex: 0 0 150px;
+    /* Fixe la largeur du titre */
+    margin-right: 20px;
+
+}
+
+.info-value {
+    color: #c98f94;
+}
+
+.info-item {
+    display: flex;
+    /* Utilise un affichage en ligne pour aligner les éléments horizontalement */
+    align-items: center;
+    /* Centre les éléments verticalement */
+    margin-bottom: 10px;
+    /* Ajoute un espacement en bas de 10 pixels entre chaque élément */
+}
+
+
+section#park-info img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+    /* Ensure the entire image is visible */
+    object-position: center;
+    /* Center the image within its container */
+}
+
+section#attractions {
+    padding: 20px;
+    /* Ajoute un espacement intérieur de 20 pixels */
+    margin: 20px auto;
+    /* Centre la section horizontalement avec un espacement de 20 pixels en haut et en bas */
+    max-width: 800px;
+    background-color: #f8f8f8;
+    /* Couleur de fond gris clair */
+    border-radius: 8px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre subtile */
+}
+
+select#attraction-type-filter {
+    display: block;
+    /* Affiche le sélecteur comme un bloc pour occuper toute la largeur disponible */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    /* Arrondit les coins du sélecteur avec un rayon de 8 pixels */
+    border: 1px solid #e88a95;
+    /* Ajoute une bordure rose au sélecteur */
+    background-color: #fff;
+    color: #e88a95;
+}
+
+ul#Attraction {
+    list-style-type: none;
+    /* Enlever les puces */
+    padding-left: 0;
+    /* Enlever le padding par défaut */
+}
+
+
+.list-items {
+    position: relative;
+    /* Définit la position relative pour permettre de positionner les éléments enfants */
+    display: block;
+    /* Affiche les éléments comme des blocs */
+    padding: 4px 8px;
+    /* Ajoute un espacement intérieur de 4 pixels en haut et en bas, 8 pixels à gauche et à droite */
+    text-decoration: none;
+    /* Supprime la soulignement des liens */
+    border: 1px solid #e88a95;
+    border-top: none;
+    width: 50%;
+}
+
+.list-items:first-child {
+    border-top: 1px solid #e88a95;
+}

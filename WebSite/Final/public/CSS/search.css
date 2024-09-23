@@ -1,0 +1,74 @@
+h2 {
+    font-family: cursive;
+    color: #e46c7a;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#search {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Espacement en bas */
+}
+
+.noResult {
+    color: #e46c7a;
+}
+
+#search-input {
+    font-size: 20px;
+    /* Taille de police plus grande */
+    padding: 10px;
+    /* Espacement à l'intérieur de la barre de recherche */
+    width: 50%;
+    /* Largeur de la barre de recherche */
+    border: 2px solid #e88a95;
+    /* Bordure de la barre de recherche */
+    border-radius: 8px;
+    /* Coins arrondis */
+}
+
+#search-button {
+    font-size: 18px;
+    /* Taille de police du bouton */
+    padding: 12px 20px;
+    /* Espacement à l'intérieur du bouton */
+    border: none;
+    background-color: #e88a95;
+    /* Couleur de fond rose */
+    color: white;
+    /* Couleur du texte */
+    border-radius: 8px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Curseur de souris au survol */
+    transition: background-color 0.3s;
+    /* Animation de transition */
+}
+
+#search-button:hover {
+    background-color: #dd6b86;
+    /* Couleur de fond rose plus clair au survol */
+}
+
+/* Style pour les résultats de recherche */
+#results-list {
+    list-style-type: none;
+    /* Supprime les puces de liste */
+    padding-left: 0;
+    /* Supprime le padding à gauche de la liste */
+}
+
+/* Style pour les liens des résultats */
+#results-list a {
+    list-style-type: none;
+    color: #e88a95;
+    text-decoration: none;
+    /* Supprime la soulignement des liens */
+}
+
+/* Style pour les liens des résultats au survol */
+#results-list a:hover {
+    text-decoration: underline;
+    /* Ajoute un soulignement au survol des liens */
+}

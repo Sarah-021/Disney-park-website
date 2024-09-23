@@ -1,0 +1,57 @@
+/* Style for the section */
+section {
+    padding: 20px;
+    /* Ajoute un espacement intérieur de 20 pixels à la section.*/
+    margin: 20px auto;
+    /*Centre la section horizontalement avec un espacement de 20 pixels en haut et en bas.*/
+    max-width: 800px;
+    /* Fixe la largeur maximale de la section à 800 pixels.*/
+    background-color: #f8f8f8;
+    /* Couleur de fond gris clair */
+    border-radius: 8px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre subtile */
+}
+
+/* Style for the map iframe */
+#gmap_canvas {
+    width: 100%;
+    height: 400px;
+    /* Hauteur de la carte */
+    border: none;
+    /* Supprime la bordure */
+    border-radius: 8px;
+    /* Coins arrondis */
+    margin-bottom: 20px;
+    /* Espacement en bas */
+}
+
+/* Style for each park */
+.park {
+    margin-bottom: 20px;
+    /* Espacement entre les parcs */
+}
+
+
+h1,
+h2 {
+    font-family: cursive;
+    color: #e88a95;
+    font-size: 28px;
+}
+
+h3 {
+    color: #ec9dbd;
+    font-weight: bold;
+}
+
+/* Style for the park image */
+.park img {
+    width: 100%;
+    /* Assure que l'image remplit le conteneur */
+    height: 400px;
+    /* Ajuste la hauteur de manière proportionnelle */
+    border-radius: 8px;
+    /* Coins arrondis */
+}

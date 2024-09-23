@@ -1,0 +1,60 @@
+/* Container for the destinations */
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Répartit les éléments sur plusieurs colonnes avec une largeur minimale de 250px */
+    gap: 20px;
+    /* Ajoute un espace entre les éléments */
+    list-style: none;
+    /* Supprime les puces */
+    padding: 0;
+}
+
+
+/* Style for each destination item */
+.destination-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #cccccc;
+    /* Ajoute une bordure */
+    border-radius: 8px;
+    /* Arrondit les coins */
+    overflow: hidden;
+    /* Cache le dépassement de contenu */
+    transition: transform 0.3s;
+    /* Ajoute une transition au survol */
+    background-color: #e6949d;
+}
+
+/* Style for each image */
+.destination-item img {
+    width: 100%;
+    /* Assure que l'image remplit le conteneur */
+    height: 100%;
+    /* Augmente la hauteur des images */
+    object-fit: cover;
+    /* Assure que l'image couvre le conteneur sans se déformer */
+}
+
+/* Style for the link */
+.card-link {
+    text-decoration: none;
+    /* Supprime la soulignement du lien */
+    color: #ffffff;
+    /* Couleur du texte */
+    font-weight: bold;
+    font-family: Georgia, "Times New Roman", serif;
+    /* Gras */
+    margin: 10px 0;
+    /* Espacement autour du lien */
+}
+
+/* Hover effect */
+.destination-item:hover {
+    transform: translateY(-5px);
+    /* Lève légèrement l'élément au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ajoute une ombre subtile */
+}
